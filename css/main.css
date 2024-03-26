@@ -1,0 +1,55 @@
+body{
+    background:linear-gradient(#104e8d, #318ce7);
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+header {
+
+    display: none;
+}
+
+#canvas {
+
+    border: 2px solid #DF691A;
+    border-radius: 20px;
+    display: none;
+}
+
+#fin {
+
+    display: none;
+}
+
+.centrer {
+
+    text-align: center;
+}
+
+.isoler-haut {
+
+    margin-top: 25px;
+}
+
+
+#menu{
+    color: white;
+    font-size: 150%;
+    
+}
+
+.jumbotron h1{
+    font-size: 300%;
+
+    font-family: Nabla;
+}
+
+.commencer{
+    font-size: 120%;
+    background-color:#f1be4e;
+    border-color:#f1be4e;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
