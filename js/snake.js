@@ -10,8 +10,8 @@ $(document).ready(function() {
     /*  VARIABLES GLOBALES
     **********************************/
 
-    var LARGEUR = 600;
-    var HAUTEUR = 600;
+    var LARGEUR = 400;
+    var HAUTEUR = 400;
     var TAILLECASE = 20;
     var VITESSE = 80;
 
@@ -40,6 +40,7 @@ $(document).ready(function() {
                     'border' : '10px solid #DF691A',
                     'border-radius' : '20px',
                     'display': 'none'
+                    
                 })
         );
     }
@@ -97,8 +98,10 @@ $(document).ready(function() {
     /* Clic sur le bouton "Commencer". */
     $('#commencer').click(function() {
         $('footer').fadeOut(500);
+        $('#vide').fadeOut(500);
         $('#menu').fadeOut(500, function() {
             $('header').slideDown(500);
+            $('header').fadeIn(500);
             canvas.slideDown(500, function() {
                 $('footer').slideDown(500, function() {
                     enPause = false;
@@ -139,7 +142,7 @@ $(document).ready(function() {
             enPause = false;
             jouer();
         } else {
-            $('#pause').text("Continuer");
+            $('#pause').text("Reprendre");
             enPause = true;
             pause();
         }
@@ -297,7 +300,7 @@ $(document).ready(function() {
     */
     function actualiser() {
 
-        ctx.fillStyle = "#2B3E50";
+        ctx.fillStyle = "#104e8d";
         ctx.fillRect(0, 0, LARGEUR, HAUTEUR);
 
         var caseX = serpent[0].x;
