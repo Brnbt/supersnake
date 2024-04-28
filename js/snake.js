@@ -37,30 +37,20 @@ $(document).ready(function() {
                 .attr('height', h)
 				.text("Quel dommage ! Votre navigateur internet ne supporte pas la technologie utilisée pour le jeu.")
                 .css({
-                    'border' : '10px solid #DF691A',
-                    'border-radius' : '20px',
+                    'border' : '60px solid #fffff',
+                    'border-radius' : '10px',
                     'display': 'none'
                     
                 })
         );
     }
 
-    /* Création du canvas. */
     creerCanvas(LARGEUR, HAUTEUR);
 
-    /* Attribution du canvas. */
     var canvas = $('#canvas');
 
-    /* Définition du contexte (2 dimensions). */
     var ctx = canvas[0].getContext("2d");
 
-
-
-    /*********************************/
-    /*  ALGORITHME DU JEU
-    **********************************/
-
-    /* Définition de variables utiles. */
     var direction;
     var nourriture;
     var serpent;
@@ -68,7 +58,6 @@ $(document).ready(function() {
     var enPause;
     var touchePressee;
 
-    /* Contrôles du serpent. */
     $(document).keydown(function (e) {
 
         var key = e.which;
@@ -367,7 +356,7 @@ $(document).ready(function() {
             dessiner(corps.x, corps.y, "#5CB85C");
         }
 
-        dessiner(nourriture.x, nourriture.y, "#FFFF00");
+        dessiner(nourriture.x, nourriture.y, "#FFFF");
         $('#score').text("Score : " + score);
     }
 });

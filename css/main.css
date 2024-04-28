@@ -11,8 +11,8 @@ header {
 
 #canvas {
 
-    border: 2px solid #DF691A ;
-    border-radius: 20px;
+    border: 2px solid #ffffff ;
+    border-radius: 60px;
     display: none;
 }
 
@@ -46,9 +46,11 @@ header {
 
 .commencer{
     font-size: 120%;
-    background-color:#f1be4e;
-    border-color:#f1be4e;
-    border-radius: 10px;
+    background-image:linear-gradient(to bottom, #f7d9a1, #ffffff);
+    border-color:#ffffff;
+    border: 10px;
+    border-radius: 5px;
+    color: #f8be55;
     padding: 10px;
     cursor: pointer;
     
